@@ -22,6 +22,7 @@
 		3FA3D9FA18ED0E1900617C3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3D9F818ED0E1900617C3F /* InfoPlist.strings */; };
 		3FA3D9FC18ED0E1900617C3F /* TestPhotoLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3D9FB18ED0E1900617C3F /* TestPhotoLibraryTests.m */; };
 		3FA3DA0C18ED179E00617C3F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA3DA0B18ED179E00617C3F /* AssetsLibrary.framework */; };
+		3FA3DA1118ED57D500617C3F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3DA1018ED57D500617C3F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3FA3D9F918ED0E1900617C3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FA3D9FB18ED0E1900617C3F /* TestPhotoLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPhotoLibraryTests.m; sourceTree = "<group>"; };
 		3FA3DA0B18ED179E00617C3F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		3FA3DA1018ED57D500617C3F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		3FA3D9C418ED0E1800617C3F = {
 			isa = PBXGroup;
 			children = (
+				3FA3DA1018ED57D500617C3F /* README.md */,
 				3FA3D9D618ED0E1800617C3F /* TestPhotoLibrary */,
 				3FA3D9F518ED0E1900617C3F /* TestPhotoLibraryTests */,
 				3FA3D9CF18ED0E1800617C3F /* Frameworks */,
@@ -235,6 +238,7 @@
 			files = (
 				3FA3D9E918ED0E1800617C3F /* Images.xcassets in Resources */,
 				3FA3D9DB18ED0E1800617C3F /* InfoPlist.strings in Resources */,
+				3FA3DA1118ED57D500617C3F /* README.md in Resources */,
 				3FA3D9E418ED0E1800617C3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

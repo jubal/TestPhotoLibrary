@@ -21,6 +21,7 @@
 		3FA3D9F218ED0E1900617C3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA3D9D418ED0E1800617C3F /* UIKit.framework */; };
 		3FA3D9FA18ED0E1900617C3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3D9F818ED0E1900617C3F /* InfoPlist.strings */; };
 		3FA3D9FC18ED0E1900617C3F /* TestPhotoLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3D9FB18ED0E1900617C3F /* TestPhotoLibraryTests.m */; };
+		3FA3DA0C18ED179E00617C3F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA3DA0B18ED179E00617C3F /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3FA3D9F718ED0E1900617C3F /* TestPhotoLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestPhotoLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		3FA3D9F918ED0E1900617C3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FA3D9FB18ED0E1900617C3F /* TestPhotoLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPhotoLibraryTests.m; sourceTree = "<group>"; };
+		3FA3DA0B18ED179E00617C3F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA3DA0C18ED179E00617C3F /* AssetsLibrary.framework in Frameworks */,
 				3FA3D9D318ED0E1800617C3F /* CoreGraphics.framework in Frameworks */,
 				3FA3D9D518ED0E1800617C3F /* UIKit.framework in Frameworks */,
 				3FA3D9D118ED0E1800617C3F /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		3FA3D9CF18ED0E1800617C3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FA3DA0B18ED179E00617C3F /* AssetsLibrary.framework */,
 				3FA3D9D018ED0E1800617C3F /* Foundation.framework */,
 				3FA3D9D218ED0E1800617C3F /* CoreGraphics.framework */,
 				3FA3D9D418ED0E1800617C3F /* UIKit.framework */,
@@ -461,6 +465,7 @@
 				3FA3DA0118ED0E1900617C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FA3DA0218ED0E1900617C3F /* Build configuration list for PBXNativeTarget "TestPhotoLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +474,7 @@
 				3FA3DA0418ED0E1900617C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

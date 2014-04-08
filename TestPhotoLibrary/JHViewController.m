@@ -14,6 +14,7 @@
 @property (nonatomic, strong) UIImageView * imageView;
 
 - (void)showImagePickerController;
+- (void)logPhotoLibraryInfo;
 - (void)choosePhoto:(id)sender;
 
 @end
@@ -60,10 +61,37 @@
     NSLog(@"Go to choos a pic.");
     UIImagePickerController * pickerController = [[UIImagePickerController alloc] init];
     pickerController.delegate = self;
+//    pickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     [self presentViewController:pickerController animated:YES completion:^{
-        
+        [self logPhotoLibraryInfo];
     }];
 }
+
+- (void)logPhotoLibraryInfo
+{
+    ALAssetsLibrary * assetsLibrary = [[ALAssetsLibrary alloc] init];
+    [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll
+                                 usingBlock:^(ALAssetsGroup *group, BOOL *stop){
+                                     NSLog(@"-------------------");
+                                     NSLog(@"Number of assets = %d", group.numberOfAssets);
+                                     UIImage * posterImage = [UIImage imageWithCGImage:[group posterImage]];
+                                     NSLog(@"PosterImage: %@", posterImage);
+                                     NSLog(@"Name: %@", [group valueForProperty:ALAssetsGroupPropertyName]);
+                                     NSLog(@"Type: %@", [group valueForProperty:ALAssetsGroupPropertyType]);
+                                     NSLog(@"URL: %@", [group valueForProperty:ALAssetsGroupPropertyURL]);
+                                     NSLog(@"PersistentID: %@", [group valueForProperty:ALAssetsGroupPropertyPersistentID]);
+                                     NSLog(@"-------------------");
+                                     if (posterImage)
+                                     {
+                                         //
+                                         // just for test
+                                         UIImageView * posterView = [[UIImageView alloc] initWithImage:posterImage];
+                                         [self.view addSubview:posterView];
+                                     }
+                                 }failureBlock:^(NSError * error){
+                                     
+                                 }];
+}// logPhotoLibraryInfo
 
 - (void)choosePhoto:(id)sender
 {
@@ -124,6 +152,9 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     NSLog(@"%s", __FUNCTION__);
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"Dismiss image picker");
+    }];
 }
 
 @end
